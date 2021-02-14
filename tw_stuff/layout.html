@@ -8,7 +8,7 @@
 
 <body>
   <main class="flex">
-    <div class="flex flex-col justify-between w-16 sm:w-1/4 h-screen bg-gray-200">
+    <div class="flex flex-col justify-between w-16 sm:w-1/4 h-screen bg-gray-100">
       <header class="flex justify-center sm:justify-start sm:items-center py-4 sm:px-4">
         <svg class="w-12 h-12 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke="currentColor">
@@ -21,19 +21,73 @@
           tagger
         </div>
       </header>
-      <nav class="bg-pink-500">
-        Nav
+      <nav class="">
+        <ul class="sm:p-2 sm:px-4">
+          <li class="flex items-center pl-3 mb-3 sm:p-2 sm:bg-gray-300 sm:rounded-md">
+            <svg class="w-7 h-7 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <div class="hidden sm:block font-medium sm:pl-3 text-gray-800">Home</div>
+          </li>
+          <li class="flex items-center pl-3 mb-3 sm:p-2">
+            <svg class="w-7 h-7 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg>
+            <div class="hidden sm:block font-medium sm:pl-3 text-gray-800">My Tasks</div>
+          </li>
+          <li class="flex items-center pl-3 mb-3 sm:p-2">
+            <svg class="w-7 h-7 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div class="hidden sm:block font-medium sm:pl-3 text-gray-800">Recent</div>
+          </li>
+        </ul>
       </nav>
-      <footer class="mt-auto bg-green-200 py-4">
-        Footer
-      </footer>
+      <footer class="mt-auto"></footer>
     </div>
-    <div class="flex flex-col justify-between w-full bg-red-400">
-      <header class="bg-blue-700 py-4">
-        Content Header
+    <div class="flex flex-col justify-between w-full">
+      <header class="flex items-center p-4 border-b-2">
+        <div class="text-xl font-semibold ml-4 text-gray-800 opacity-75">Home</div>
+        <div class="hidden sm:block ml-auto mr-4">
+          <button class="py-2 px-4 rounded-md border-2 mr-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="button">Create</button>
+          <button class="py-2 px-4 rounded-md bg-purple-600 hover:bg-purple-700 text-white border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="button">Share</button>
+        </div>
       </header>
-      <section class="bg-purple-400">
-        Content
+      <section class="">
+        PINNED PROJECTS
+        <div class="sm:flex sm:justify-evenly">
+          <div class="flex items-center">
+            <div class="border border-red-500 border-l-0 bg-red-500 p-5 rounded-tl-md rounded-bl-md text-white">GA</div>
+            <div class="border border-gray-400 border-l-0 border-opacity-50 py-5 rounded-br-md rounded-tr-md">
+              <div class="flex items-center">
+                <div class="px-4">GraphQL A...</div>
+                <div class="ml-auto">
+                  <svg class="w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="border border-purple-500 border-l-0 bg-purple-500 p-5 rounded-tl-md rounded-bl-md text-white">NB</div>
+            <div class="border border-gray-400 border-l-0 border-opacity-50 p-5 rounded-br-md rounded-tr-md">
+              New Benef...
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="border border-green-500 border-l-0 bg-green-500 p-5 rounded-tl-md rounded-bl-md text-white">NB</div>
+            <div class="border border-gray-400 border-l-0 border-opacity-50 p-5 rounded-br-md rounded-tr-md">
+              Onboardin...
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="border border-blue-500 border-l-0 bg-blue-500 p-5 rounded-tl-md rounded-bl-md text-white">NB</div>
+            <div class="border border-gray-400 border-l-0 border-opacity-50 p-5 rounded-br-md rounded-tr-md">
+              iOS App
+            </div>
+          </div>
+        </div>
       </section>
       <footer class="mt-auto bg-pink-300 py-4">
         Content Footer
