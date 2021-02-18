@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: .5rem .5rem;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.header-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-input {
+  border-left: 2px solid rgba(209, 213, 219, 1);
+  border-right: 2px solid rgba(209, 213, 219, 1);
+  border-top: 2px solid rgba(209, 213, 219, 1);
+  border-bottom: 2px solid rgba(209, 213, 219, 1);
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.password-input {
+  border-left: 2px solid rgba(209, 213, 219, 1);
+  border-right: 2px solid rgba(209, 213, 219, 1);
+  border-bottom: 2px solid rgba(209, 213, 219, 1);
+  border-top: none;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.remember-me-container {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.forgot-password {
+  margin-left: auto;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    padding-right: .1rem;
+    padding-left: .1rem;
+  }
+}
