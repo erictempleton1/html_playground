@@ -8,13 +8,23 @@ h1 {
   margin: 0;
 }
 
+header {
+  /* display: flex; */
+}
+
 .header-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
+.button-container {
+  background-color: blue;
+  /* display: flex;
+  align-items: center; */
+}
+
 .description-container {
-  display: flex;
+  /* display: flex; */
 }
 
 .item {
