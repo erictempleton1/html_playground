@@ -1,20 +1,25 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
   padding-top: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
 }
 
+.container {
+  max-width: 28rem;
+  width: 100%;
+}
+
 h1 {
-  margin-bottom: 0;
+  margin-bottom: .5rem;
+  text-align: center;
 }
 
 input {
@@ -25,10 +30,6 @@ a {
   text-decoration: none;
   color: rgba(79, 70, 229, 1);
   font-weight: 400;
-}
-
-.main-container {
-  max-width: 30rem;
 }
 
 .header-icon {
@@ -83,7 +84,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .3rem;
+  padding: .75rem;
   color: white;
   border-radius: .25rem;
   border: none;
@@ -99,6 +100,11 @@ button:hover .button-icon {
   color: rgba(129, 140, 248, 1);
 }
 
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 1pt rgb(209, 132, 245);
+}
+
 .button-icon {
   width: 1.25rem;
   height: 1.25rem;
@@ -108,9 +114,13 @@ button:hover .button-icon {
 @media only screen and (max-width: 400px) {
   .remember-me-container {
     display: block;
-    /* justify-content: start; */
   }
+
   .forgot-password {
     margin-left: none;
+  }
+
+  input {
+    padding: .75rem .75rem;
   }
 }
