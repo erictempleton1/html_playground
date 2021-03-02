@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 52px;
+}
+
+.header__subtitle {
+  margin: 0;
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+
+.header__billing {
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+}
+
+.header__billing_button {
+  padding: 0.75rem 2rem;
+}
+
+.header__billing_button--selected {
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
