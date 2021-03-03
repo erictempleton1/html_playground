@@ -14,15 +14,55 @@
     <h1 class="header__title">Pricing Plans</h1>
     <h2 class="header__subtitle">Start building for free, then add a site plan to go live. Account plans unlock
       additional features.</h2>
-    <div class="header__billing">
-      <div class="header__billing_button header__billing_button--selected">Monthly billing</div>
-      <div class="header__billing_button">Yearly billing</div>
-    </div>
+    <a onclick="toggleButton()" href="#" class="header__billing">
+      <div id="monthly-button" class="header__billing_button header__billing_button--selected">Monthly billing</div>
+      <div id="yearly-button" class="header__billing_button">Yearly billing</div>
+    </a>
   </header>
   <main>
-
+    <div class="price__container">
+      <div class="price__box">
+        <div class="price__box_upper">
+          <h3>Hobby</h3>
+          All the basics for starting a new business
+          <div class="price__price">$24/mo</div>
+          <button>Buy Hobby</button>
+        </div>
+      </div>
+      <div class="price__box">
+        <div class="price__box_upper">
+          <h3>Freelancer</h3>
+          All the basics for starting a new business
+          <div class="price__price">$24/mo</div>
+          <button>Buy Freelancer</button>
+        </div>
+      </div>
+      <div class="price__box">
+        <div class="price__box_upper">
+          <h3>Startup</h3>
+          All the basics for starting a new business
+          <div class="price__price">$24/mo</div>
+          <button>Buy Startup</button>
+        </div>
+      </div>
+      <div class="price__box">
+        <div class="price__box_upper">
+          <h3>Enterprise</h3>
+          All the basics for starting a new business
+          <div class="price__price">$24/mo</div>
+          <button>Buy Enterprise</button>
+        </div>
+      </div>
+    </div>
   </main>
 
 </body>
+<script>
+  function toggleButton() {
+    const selectedClass = 'header__billing_button--selected';
+    document.getElementById('monthly-button').classList.toggle(selectedClass);
+    document.getElementById('yearly-button').classList.toggle(selectedClass);
+  }
+</script>
 
 </html>

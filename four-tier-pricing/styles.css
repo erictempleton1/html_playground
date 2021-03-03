@@ -28,6 +28,8 @@ header {
 }
 
 .header__billing {
+  text-decoration: none;
+  color: black;
   display: flex;
   align-items: center;
   background-color: lightgrey;
@@ -41,5 +43,20 @@ header {
 .header__billing_button--selected {
   border-radius: 0.5rem;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.price__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.price__box {
+  border-radius: 0.5rem;
+  border: 2px solid rgba(229, 231, 235, 1);
+}
+
+.price__box_upper {
+  padding: 1rem;
 }
