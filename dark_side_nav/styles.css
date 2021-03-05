@@ -1,0 +1,158 @@
+/* START RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+/* END RESETS */
+
+:root {
+  --denim-50: #f7fafb;
+  --denim-100: #edf6fa;
+  --denim-200: #d6e7f5;
+  --denim-300: #b8d2f0;
+  --denim-400: #88abe9;
+  --denim-500: #5781e0;
+  --denim-600: #3d5dca;
+  --denim-700: #3348a4;
+  --denim-800: #293876;
+  --denim-900: #212d5a;
+  --shared-radius: 0.5rem;
+}
+
+main {
+  display: flex;
+}
+
+.sidenav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--denim-900);
+  border-top-right-radius: var(--shared-radius);
+  border-bottom-right-radius: var(--shared-radius);
+}
+
+.sidenav__item {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: var(--shared-radius);
+}
+
+.sidenav__item__dark_bg {
+  background-color: var(--denim-800);
+}
+
+.sidenav__item:hover {
+  background-color: var(--denim-700);
+  cursor: pointer;
+}
+
+.sidenav__item__link_spacing {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidenav__header_expand_icon {
+  margin-left: auto;
+  color: var(--denim-50);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.sidenav__item_icon_container {
+  padding: 2px;
+  margin-right: 1rem;
+  border-radius: var(--shared-radius);
+}
+
+.sidenav__item_icon_container__dark_bg {
+  background-color: var(--denim-700);
+}
+
+.sidenav__item_icon {
+  padding-top: 2px;
+  width: 2rem;
+  height: 2rem;
+  color: var(--denim-50);
+}
+
+.sidenav__item_text {
+  margin-right: 4rem;
+  color: var(--denim-50);
+}
+
+.sidenav__item_text_main {
+  font-size: 16px;
+}
+
+.sidenav__item_text_main__bold {
+  font-weight: 900;
+}
+
+.sidenav__item_text_main__flat {
+  color: var(--denim-200);
+}
+
+
+/* START CONTENT */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.content__child {
+  display: flex;
+  flex-grow: 1;
+  border: 10px dashed var(--denim-200);
+  border-radius: 1rem;
+}
+/* END CONTENT */
