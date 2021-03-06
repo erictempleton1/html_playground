@@ -148,18 +148,19 @@ main {
   color: var(--denim-200);
 }
 
+.sidenav__footer {
+  margin-top: auto;
+  border-top: 2px solid var(--denim-700);
+}
+
 .sidenav__item_footer {
+  /* Could have used sidenav__item, but didn't want hover
+  and needed less padding. */
   display: flex;
   align-items: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   border-radius: var(--shared-radius);
-}
-
-.sidenav__footer {
-  margin-top: auto;
-  /* background-color: var(--denim-500); */
-  border-top: 2px solid var(--denim-700);
 }
 
 .sidenav__footer_upper_text {
