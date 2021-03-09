@@ -57,6 +57,10 @@ p {
 }
 /* END RESETS */
 
+:root {
+  --fancy-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
 .container {
   padding: 5rem;
   display: flex;
@@ -70,8 +74,8 @@ p {
   padding: 10rem 15rem;
   background-color: cornflowerblue;
   border-radius: 1.5rem;
-  transform: rotate(-6deg);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: rotate(-5deg);
+  box-shadow: var(--fancy-shadow);
 }
 
 .over {
@@ -79,5 +83,5 @@ p {
   padding: 10rem 15rem;
   background-color: white;
   border-radius: 1.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--fancy-shadow);
 }
