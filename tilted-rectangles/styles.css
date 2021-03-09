@@ -1,12 +1,14 @@
 /* START RESETS */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
-  height:100%;
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -31,13 +33,20 @@ input::-moz-focus-inner {
   margin: 0;
 }
 
-ul, ol, dd {
+ul,
+ol,
+dd {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
@@ -46,28 +55,29 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0;
 }
-
 /* END RESETS */
 
 .container {
-  width: 100%;
-  height: 100%;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f3f4f6;
 }
 
 .under {
-  padding: 6rem;
-  background-color: darkgoldenrod;
   position: absolute;
+  padding: 10rem 15rem;
+  background-color: cornflowerblue;
+  border-radius: 1.5rem;
   transform: rotate(-6deg);
-  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .over {
-  padding: 6rem;
-  background-color: darkgreen;
   position: relative;
-  border-radius: 0.5rem;
+  padding: 10rem 15rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
