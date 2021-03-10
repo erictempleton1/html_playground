@@ -1,0 +1,185 @@
+/* START RESETS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+/* END RESETS */
+
+:root {
+  --bdazzled-blue: #3d5a80ff;
+  --pale-cerulean: #98c1d9ff;
+  --light-cyan: #e0fbfcff;
+  --burnt-sienna: #ee6c4dff;
+  --gunmetal: #293241ff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+  background-color: lightgray;
+}
+
+.card {
+  width: 350px;
+  height: 700px;
+  border-radius: 1rem;
+  background-color: var(--gunmetal);
+}
+
+.card__top_nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__top_nav_icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.card__header_user_icon {
+  width: 5rem;
+  height: 5rem;
+  color: var(--pale-cerulean);
+  margin-bottom: 0.5rem;
+}
+
+.card__header_email_text {
+  color: white;
+  font-size: 20px;
+}
+
+.card__actions {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--light-cyan);
+  border-bottom: 1px solid var(--light-cyan);
+}
+
+.card__actions_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__actions_item_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--pale-cerulean);
+  margin-bottom: 0.5rem;
+}
+
+.card__actions_item_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--pale-cerulean);
+}
+
+.card__contact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card__contact_header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.card__contact_header_text {
+  color: white;
+}
+
+.card__contact_email_box {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid var(--light-cyan);
+  border-radius: 0.5rem;
+}
+
+.card__contact_email_box_content {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.card__contact_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: lightgrey;
+  opacity: 0.4;
+}
+
+.card__contact_email_box_text {
+  color: white;
+  padding-left: 1rem;
+}
