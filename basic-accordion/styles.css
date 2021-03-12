@@ -1,0 +1,95 @@
+/* START RESETS */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+/* END RESETS */
+
+:root {
+  --imperial-red: #e63946ff;
+  --honeydew: #f1faeeff;
+  --powder-blue: #a8dadcff;
+  --celadon-blue: #457b9dff;
+  --prussian-blue: #1d3557ff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--honeydew);
+}
+
+.content {
+  width: 600px;
+  height: 400px;
+  background-color: var(--powder-blue);
+  padding: 3rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--prussian-blue);
+}
+
+.btn:focus {
+  outline: var(--prussian-blue) solid 2px;
+  outline-offset: -6px;
+  box-shadow: 0 0 2px var(--prussian-blue);
+}
+
+.toggle-container {
+  display: block;
+  margin-top: 1rem;
+}
+
+.hide {
+  height: 0;
+  overflow: hidden;
+  /* transition: height 3s ease */
+  transition: all .2s ease-out;
+}

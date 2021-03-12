@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <button onclick="toggleContainer()" class="btn">
+        Click me
+      </button>
+      <div id="toggle-container" class="toggle-container hide">
+        When an HTML element on your page has display: grid or display: inline-grid applied to it, you can see a grid
+        badge next to it in the Elements panel. Click the badge to toggle the display of a grid overlay on the page.
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function toggleContainer() {
+    document.getElementById("toggle-container").classList.toggle("hide");
+  }
+</script>
+
+</html>
