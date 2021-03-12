@@ -12,20 +12,43 @@
 <body>
   <div class="container">
     <div class="content">
-      <button onclick="toggleContainer()" class="btn">
-        Click me
-      </button>
-      <div id="toggle-container" class="toggle-container hide">
-        When an HTML element on your page has display: grid or display: inline-grid applied to it, you can see a grid
-        badge next to it in the Elements panel. Click the badge to toggle the display of a grid overlay on the page.
+      <div class="toggle-item">
+        <button id="toggle-button-1" class="btn">
+          Toggle 1
+        </button>
+        <div id="toggle-container-1" class="toggle-container">
+          <div class="toggle-content">
+            When an HTML element on your page has display: grid or display: inline-grid applied to it,
+            you can see a grid
+            badge next to it in the Elements panel.
+          </div>
+        </div>
+      </div>
+      <div class="toggle-item">
+        <button id="toggle-button-2" class="btn">
+          Toggle 2
+        </button>
+        <div id="toggle-container-2" class="toggle-container">
+          <div class="toggle-content">
+            When an HTML element on your page has display: grid or display: inline-grid applied to it,
+            you can see a grid
+            badge next to it in the Elements panel.
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
 <script>
-  function toggleContainer() {
-    document.getElementById("toggle-container").classList.toggle("hide");
-  }
+  document.getElementById("toggle-button-1")
+    .addEventListener("click", () => {
+      document.getElementById("toggle-container-1").classList.toggle("show");
+    });
+
+  document.getElementById("toggle-button-2")
+    .addEventListener("click", () => {
+      document.getElementById("toggle-container-2").classList.toggle("show");
+    });
 </script>
 
 </html>

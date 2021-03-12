@@ -61,17 +61,18 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--honeydew);
+  /* background-color: var(--honeydew); */
 }
 
 .content {
   width: 600px;
   height: 400px;
   background-color: var(--powder-blue);
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .btn {
+  width: 100%;
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--prussian-blue);
 }
@@ -83,13 +84,23 @@ p {
 }
 
 .toggle-container {
-  display: block;
-  margin-top: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
 }
 
-.hide {
-  height: 0;
-  overflow: hidden;
-  /* transition: height 3s ease */
-  transition: all .2s ease-out;
+.toggle-item {
+  padding: 2px;
+}
+
+.show {
+  max-height: 500px;
+}
+
+.toggle-content {
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 1px solid var(--prussian-blue);
+  background-color: var(--honeydew);
 }
