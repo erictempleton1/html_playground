@@ -75,8 +75,23 @@ p {
 	background-color: lightslategray;
 }
 
-header {
+.toolbar {
+  display: flex;
+  align-items: center;
 	background-color: red;
+}
+
+.toolbar__menu_icon {
+	height: 2rem;
+  width: 2rem;
+}
+
+.mobile_menu {
+  background-color: coral;
+}
+
+.toolbar__mobile_menu_button {
+  margin-left: auto;
 }
 
 @media (min-width: 640px) {
@@ -84,4 +99,12 @@ header {
 		display: flex;
 		flex-direction: column;
 	}
+
+  .toolbar__mobile_menu_button {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
 }

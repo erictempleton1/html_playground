@@ -6,16 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <title>Document</title>
 </head>
 
 <body>
   <div class="container">
     <div class="sidenav">Side nav</div>
-    <div class="content">
-      <header>
-        Top nav
-      </header>
+    <div class="content" x-data="{ open: false }">
+      <div class="toolbar">
+        Toolbar
+        <button class="toolbar__mobile_menu_button" x-show="!open" @click="open = true">
+          <svg class="toolbar__menu_icon" class="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <button class="toolbar__mobile_menu_button" x-show="open" @click="open = true">
+          <svg class="toolbar__menu_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+      </div>
+      <div class="mobile_menu" x-show="open" @click.away="open = false">
+        Dropdown Body
+      </div>
+      Content body
     </div>
   </div>
 </body>
