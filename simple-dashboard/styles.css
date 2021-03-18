@@ -1,0 +1,87 @@
+/* START RESETS */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+button {
+	background-color: transparent;
+	color: inherit;
+	border-width: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol, dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+/* END RESETS */
+
+:root {
+	--oxford-blue: #0b132bff;
+	--space-cadet: #1c2541ff;
+	--independence: #3a506bff;
+	--maximum-blue-green: #5bc0beff;
+	--turquoise-blue: #6fffe9ff;
+}
+
+.container {
+	display: flex;
+}
+
+.sidenav {
+	height: 100vh;
+	display: none;
+	flex-direction: column;
+	background-color: darkslategray;
+}
+
+.content {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: lightslategray;
+}
+
+header {
+	background-color: red;
+}
+
+@media (min-width: 640px) {
+	.sidenav {
+		display: flex;
+		flex-direction: column;
+	}
+}
