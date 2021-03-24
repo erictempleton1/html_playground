@@ -1,0 +1,91 @@
+/* START RESETS */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+/* END RESETS */
+
+.Hero__Container {
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+.Hero__Nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.Hero__Nav_Main {
+  display: flex;
+  align-items: center;
+}
+
+.Hero__Nav_Main_Icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.Hero__Nav_Main_Text {
+  font-weight: 700;
+  font-size: 24px;
+  padding-left: 0.5rem;
+}
+
+.Hero__Nav_Links {
+  display: flex;
+}
+
+.Hero__Nav_Links li a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+}
