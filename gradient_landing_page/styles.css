@@ -45,23 +45,21 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0;
 }
-
 /* END RESETS */
 
-.Hero__Container {
-  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+:root {
+  --btnColor: hsla(0,0%,100%,0.2);
 }
 
+.Hero__Container {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);}
+
 .Hero__Nav {
-  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding: 1rem;
 }
 
 .Hero__Nav_Main {
@@ -70,22 +68,71 @@ p {
 }
 
 .Hero__Nav_Main_Icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .Hero__Nav_Main_Text {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   padding-left: 0.5rem;
 }
 
 .Hero__Nav_Links {
-  display: flex;
+  display: none;
 }
 
 .Hero__Nav_Links li a {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 500;
+}
+
+.Hero__Nav_Signin_Button {
+  display: none;
+}
+
+.Hero__Nav_Menu_Icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.Hero__Nav_Menu_Container {
+  background-color: var(--btnColor);
+  border-radius: 1rem;
+  padding: 0.1rem 0.75rem;
+}
+
+.btn {
+  background-color: var(--btnColor);
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .Hero__Nav {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .Hero__Nav_Main_Text {
+    font-size: 24px;
+  }
+
+  .Hero__Nav_Links {
+    display: flex;
+  }
+
+  .Hero__Nav_Signin_Button {
+    display: block;
+  }
+
+  .Hero__Nav_Menu_Icon {
+    display: none;
+  }
+
+  .Hero__Nav_Menu_Container {
+    display: none;
+  }
 }
