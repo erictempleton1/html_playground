@@ -42,8 +42,8 @@
     </div>
     <!-- END TOOLBAR -->
 
-    <!-- START HERO CONTENT-->
-    <div class="Hero__Content">
+    <!-- START HERO CONTENT CONTAINER-->
+    <div class="Hero__Content_Container">
 
       <!-- START MOBILE NAV-->
       <div class="Hero__Content_Mobile_Menu" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false">
@@ -52,6 +52,7 @@
             <li><a class="Mobile_Menu__Nav_Item" href="#pricing">Pricing</a></li>
             <li><a class="Mobile_Menu__Nav_Item" href="#overview">Overview</a></li>
             <li><a class="Mobile_Menu__Nav_Item" href="#updates">Updates</a></li>
+            <li><a class="Mobile_Menu__Nav_Item" href="#signin">Sign In</a></li>
           </ul>
         </nav>
       </div>
@@ -59,11 +60,23 @@
 
       <!-- START HERO CONTENT -->
       <div class="Hero_Content__Main">
-
+        <div class="Hero_Content__Text_Container">
+          <div class="Hero_Content__Text">Awesome Hero Text Goes Here</div>
+          <div class="Hero_Content__SubText">
+            Description sub text would go here. Some words that describe the product or page would be a really good thing to put here.
+          </div>
+          <div class="Hero_Content__Action_Button_Container">
+            <a class="btn btn-lg btn-action">Get Started</a>
+            <a class="btn btn-lg">Learn More</a>
+          </div>
+        </div>
+        <div class="Hero_Content__Image_Container">
+          <img class="Hero__Content_Image" src="./photos.svg" alt="Visual Data Image"></div>
       </div>
       <!-- END HERO CONTENT -->
+
     </div>
-    <!-- END HERO CONETNT -->
+    <!-- END HERO CONTENT CONTAINER -->
 
   </div>
   <div class="Bottom__Content">
