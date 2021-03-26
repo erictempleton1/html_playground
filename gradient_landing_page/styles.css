@@ -45,14 +45,22 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0;
 }
+
 /* END RESETS */
 
 :root {
-  --btnColor: hsla(0,0%,100%,0.2);
+  --btnColor: hsla(0, 0%, 100%, 0.2);
 }
 
 .Hero__Container {
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);}
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 90%,
+    0 calc(100% - 8vw)
+  );
+}
 
 .Hero__Nav {
   display: flex;
@@ -110,29 +118,53 @@ p {
   border-radius: 1.25rem;
 }
 
+.Mobile_Menu__Nav_Item {
+  display: block;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.Hero__Container::after {
+  content: '';
+  color: white;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  transform: skewY(30deg);
+}
+
+.Hero_Content__Main {
+  min-height: 300px;
+  max-height: 500px;
+}
+
+.Bottom__Content {
+  height: 400px;
+  background-color: white;
+}
+
 @media (min-width: 900px) {
   .Hero__Nav {
     padding-left: 8rem;
     padding-right: 8rem;
   }
-
   .Hero__Nav_Main_Text {
     font-size: 24px;
   }
-
   .Hero__Nav_Links {
     display: flex;
   }
-
   .Hero__Nav_Signin_Button {
     display: block;
   }
-
   .Hero__Nav_Menu_Icon {
     display: none;
   }
-
   .Hero__Nav_Menu_Container {
+    display: none;
+  }
+  .Hero__Content_Mobile_Menu {
     display: none;
   }
 }

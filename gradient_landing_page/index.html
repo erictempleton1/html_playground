@@ -8,11 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <title>Document</title>
 </head>
 
 <body>
-  <div class="Hero__Container">
+  <div class="Hero__Container" x-data="{ mobileMenuOpen: false }">
+
+    <!-- START TOOLBAR -->
     <div class="Hero__Nav">
       <div class="Hero__Nav_Main">
         <svg class="Hero__Nav_Main_Icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -30,12 +33,41 @@
         <li><a href="#updates">Updates</a></li>
       </ul>
       <a href="#signin" class="btn Hero__Nav_Signin_Button">Sign In</a>
-      <a class="Hero__Nav_Menu_Container" href="">
-        <svg class="Hero__Nav_Menu_Icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <a class="Hero__Nav_Menu_Container" href="#" @click="mobileMenuOpen = !mobileMenuOpen">
+        <svg class="Hero__Nav_Menu_Icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </a>
     </div>
+    <!-- END TOOLBAR -->
+
+    <!-- START HERO CONTENT-->
+    <div class="Hero__Content">
+
+      <!-- START MOBILE NAV-->
+      <div class="Hero__Content_Mobile_Menu" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false">
+        <nav>
+          <ul>
+            <li><a class="Mobile_Menu__Nav_Item" href="#pricing">Pricing</a></li>
+            <li><a class="Mobile_Menu__Nav_Item" href="#overview">Overview</a></li>
+            <li><a class="Mobile_Menu__Nav_Item" href="#updates">Updates</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- END MOBILE NAV -->
+
+      <!-- START HERO CONTENT -->
+      <div class="Hero_Content__Main">
+
+      </div>
+      <!-- END HERO CONTENT -->
+    </div>
+    <!-- END HERO CONETNT -->
+
+  </div>
+  <div class="Bottom__Content">
+
   </div>
 </body>
 
